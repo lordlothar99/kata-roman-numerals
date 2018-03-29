@@ -10,7 +10,9 @@ public class RomanNumerals {
             return repeat("I", number);
         }
 
-        if (number == 5) {
+        if (number == 4) {
+            return "IV";
+        } else if (number == 5) {
             return "V";
         } else {
             return "X";

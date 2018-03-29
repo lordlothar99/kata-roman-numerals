@@ -43,4 +43,11 @@ public class RomanNumeralsTest {
 
         assertThat(result).isEqualTo(expectedResult);
     }
+
+    @Test
+    public void should_return_IV_when_input_is_4() {
+        String result = romanNumerals.convert(4);
+
+        assertThat(result).isEqualTo("IV");
+    }
 }
