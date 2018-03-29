@@ -6,7 +6,8 @@ import org.junit.Test;
 
 public class RomanNumeralsTest {
 
-    RomanNumerals romanNumerals = new RomanNumerals();
+    private RomanNumerals romanNumerals = new RomanNumerals();
+
     @Test
     public void should_return_I_when_input_is_1() {
         String result = romanNumerals.convert(1);
