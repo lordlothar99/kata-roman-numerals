@@ -28,4 +28,11 @@ public class RomanNumeralsTest {
 
         assertThat(result).isEqualTo("V");
     }
+
+    @Test
+    public void should_return_II_when_input_is_2() {
+        String result = romanNumerals.convert(2);
+
+        assertThat(result).isEqualTo("II");
+    }
 }
