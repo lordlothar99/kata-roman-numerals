@@ -3,7 +3,11 @@ package github.katas.roman_numerals_kata;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+import junitparams.JUnitParamsRunner;
+
+@RunWith(JUnitParamsRunner.class)
 public class RomanNumeralsTest {
 
     private RomanNumerals romanNumerals = new RomanNumerals();
