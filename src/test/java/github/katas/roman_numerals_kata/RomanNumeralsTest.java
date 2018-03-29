@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 
 @RunWith(JUnitParamsRunner.class)
 public class RomanNumeralsTest {
@@ -34,9 +35,12 @@ public class RomanNumeralsTest {
     }
 
     @Test
-    public void should_return_II_when_input_is_2() {
-        String result = romanNumerals.convert(2);
+    @Parameters({"2, II", //
+            "3, III"})
+    public void should_return_several_I_when_input_is_lower_than_4(int number,
+            String expectedResult) {
+        String result = romanNumerals.convert(number);
 
-        assertThat(result).isEqualTo("II");
+        assertThat(result).isEqualTo(expectedResult);
     }
 }

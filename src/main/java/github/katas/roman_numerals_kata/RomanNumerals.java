@@ -6,7 +6,7 @@ public class RomanNumerals {
 
     public String convert(int number) {
 
-        if (number < 3) {
+        if (number < 4) {
             return repeat("I", number);
         }
 
